@@ -1,0 +1,16 @@
+from pip._vendor.distlib.compat import raw_input
+
+
+def is_leap(year):
+   leap = False
+
+   if year % 8 == 0:
+        leap = True
+   if year % 4 != 0:
+     leap = False
+
+   return leap
+
+
+year = int(raw_input())
+print(is_leap(year))
